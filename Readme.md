@@ -1,7 +1,7 @@
 CPIX Test Vectors
 =================
 
-Generated 2019-01-03 using Axinom.Cpix v2.2.0
+Generated 2019-01-03 using [Axinom.Cpix](https://github.com/Axinom/cpix) v2.2.0
 
 Included test certificates generated as follows: `makecert.exe -pe -n "CN=CPIX Example Entity 1" -sky exchange -a sha512 -len 4096 -r -ss My`. The password for any included PFX files is the filename, without extension, case-sensitive.
 
