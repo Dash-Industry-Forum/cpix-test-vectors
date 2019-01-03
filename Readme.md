@@ -1,7 +1,7 @@
 CPIX Test Vectors
 =================
 
-Generated 2016-08-11 using Axinom.Cpix v1.0.0
+Generated 2019-01-03 using Axinom.Cpix v2.2.0
 
 Included test certificates generated as follows: `makecert.exe -pe -n "CN=CPIX Example Entity 1" -sky exchange -a sha512 -len 4096 -r -ss My`. The password for any included PFX files is the filename, without extension, case-sensitive.
 
@@ -16,15 +16,6 @@ Complex
 =======
 
 All types of entities, with many data fields filled, with encryption of content keys and with signatures on everything. The document as a whole is signed using Cert4 and each collection is signed using both Cert3 and Cert4.
-
-EvenMoreComplex
-===============
-
-A more complex version of the "Complex" test vector! All types of entities, with many data fields filled, with encryption of content keys and with signatures on everything. The document as a whole is signed using Cert4 and each collection is signed using both Cert3 and Cert4.
-
-In addition, nonstandard namespace prefixes are used everywhere, the XML is pretty-printed before signing, the elements to be signed are given unusual id values and various XML comments are added after signing. Finally, the whole thing is encoded using UTF-16.
-
-The resulting output is still valid and all the signatures should successfully pass verification on a conforming implementation!
 
 EmptyDocument
 =============
@@ -48,6 +39,15 @@ EncryptedContentKeysWithMultipleRecipients
 ==========================================
 
 Content keys encrypted for delivery to four recipients (Cert1 through Cert4).
+
+EvenMoreComplex
+===============
+
+A more complex version of the "Complex" test vector! All types of entities, with many data fields filled, with encryption of content keys and with signatures on everything. The document as a whole is signed using Cert4 and each collection is signed using both Cert3 and Cert4.
+
+In addition, nonstandard namespace prefixes are used everywhere, the XML is pretty-printed before signing, the elements to be signed are given unusual id values and various XML comments are added after signing. Finally, the whole thing is encoded using UTF-16.
+
+The resulting output is still valid and all the signatures should successfully pass verification on a conforming implementation!
 
 Invalid_BadContentKeysSignature
 ===============================
