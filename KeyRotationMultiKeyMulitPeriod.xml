@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<cpix:CPIX xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" xmlns:pskc="urn:ietf:params:xml:ns:keyprov:pskc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpix="urn:dashif:org:cpix" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" id="test">
+  <cpix:ContentKeyList>
+    <cpix:ContentKey kid="7ce7f10d-a91b-41b9-b331-7999fd1abf4c" explicitIV="f45bcebb-f0df-4a34-bf4e-c24edfcf6289" id="video_1">
+      <cpix:Data>
+        <pskc:Secret>
+          <pskc:PlainValue>s/zSNTG4TR2jY04srqSqFQ==</pskc:PlainValue>
+        </pskc:Secret>
+      </cpix:Data>
+    </cpix:ContentKey>
+    <cpix:ContentKey kid="988395ce-667a-443a-b9cc-58ad7875a687" explicitIV="6f411e73-eb4a-4373-8757-a70b624c278c" id="audio_1">
+      <cpix:Data>
+        <pskc:Secret>
+          <pskc:PlainValue>B9mye8sHQJSOhOkbpKKpNg==</pskc:PlainValue>
+        </pskc:Secret>
+      </cpix:Data>
+    </cpix:ContentKey>
+    <cpix:ContentKey kid="6bf7f10d-a91b-41b9-b331-7999fd1abe3b" explicitIV="f45bcebb-f0df-4a34-bf4e-c24edfcf6289" id="video_2">
+      <cpix:Data>
+        <pskc:Secret>
+          <pskc:PlainValue>Dsgzmhp1SbGzGusuf35Z8g==</pskc:PlainValue>
+        </pskc:Secret>
+      </cpix:Data>
+    </cpix:ContentKey>
+    <cpix:ContentKey kid="ab8395ce-667a-443a-b9cc-58ad7875b541" explicitIV="6f411e73-eb4a-4373-8757-a70b624c278c" id="audio_2">
+      <cpix:Data>
+        <pskc:Secret>
+          <pskc:PlainValue>87uye8sHQJSOhOkbpKKpgg==</pskc:PlainValue>
+        </pskc:Secret>
+      </cpix:Data>
+    </cpix:ContentKey>
+  </cpix:ContentKeyList>
+  <cpix:ContentKeyPeriodList>
+    <cpix:ContentKeyPeriod id="now" index="1"/>
+    <cpix:ContentKeyPeriod id="next" index="2"/>
+  </cpix:ContentKeyPeriodList>
+  <cpix:ContentKeyUsageRuleList>
+    <cpix:ContentKeyUsageRule kid="7ce7f10d-a91b-41b9-b331-7999fd1abf4c">
+      <cpix:KeyPeriodFilter periodId="now"/>
+      <cpix:VideoFilter/>
+    </cpix:ContentKeyUsageRule>
+    <cpix:ContentKeyUsageRule kid="988395ce-667a-443a-b9cc-58ad7875a687">
+      <cpix:KeyPeriodFilter periodId="now"/>
+      <cpix:AudioFilter/>
+    </cpix:ContentKeyUsageRule>
+     <cpix:ContentKeyUsageRule kid="6bf7f10d-a91b-41b9-b331-7999fd1abe3b">
+      <cpix:KeyPeriodFilter periodId="next"/>
+      <cpix:VideoFilter/>
+    </cpix:ContentKeyUsageRule>
+    <cpix:ContentKeyUsageRule kid="ab8395ce-667a-443a-b9cc-58ad7875b541">
+      <cpix:KeyPeriodFilter periodId="next"/>
+      <cpix:AudioFilter/>
+    </cpix:ContentKeyUsageRule>
+  </cpix:ContentKeyUsageRuleList>
+</cpix:CPIX>
